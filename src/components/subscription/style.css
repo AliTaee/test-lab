@@ -1,0 +1,27 @@
+.sub-email__label {
+  margin-right: 6px;
+}
+
+.sub-email__input--error {
+  border-color: red;
+  outline-color: red;
+}
+
+.sub-email__input--valid {
+  border-color: green;
+  outline-color: green;
+}
+
+.sub-email__submit {
+  background: #212121;
+  color: #fefefe;
+  padding: 6px 12px;
+  margin-left: 6px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.sub-email__submit:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
