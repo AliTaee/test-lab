@@ -4,11 +4,12 @@ import './index.css'
 import reportWebVitals from './reportWebVitals'
 
 // Components
-import { Subscription } from './components/subscription/Subscription'
+// import { Subscription } from './components/subscription/Subscription'
+import { Editor } from './components/form1/Editor'
 
 ReactDOM.render(
   <React.StrictMode>
-    <Subscription />
+    <Editor />
   </React.StrictMode>,
   document.getElementById('root'),
 )
