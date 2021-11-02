@@ -2,6 +2,15 @@
 
 Learning and Practicing unit test in React.
 
+## fundamentals folder
+
+In this folder you could find pure unit testing in JavaScript
+and how we could create our own assertion library.
+
+## src/components folder
+
+In this folder you could see examples of unit testing for react components.
+
 ## Available Scripts
 
 In the project directory, you can run:
