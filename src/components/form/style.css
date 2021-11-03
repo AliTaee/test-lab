@@ -1,0 +1,17 @@
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form input,
+.form textarea {
+  margin-bottom: 0.5em;
+}
+
+.form button {
+  margin-top: 0.5em;
+  background-color: #212121;
+  color: #fefefe;
+  border-radius: 6px;
+  padding: 6px 12px;
+}

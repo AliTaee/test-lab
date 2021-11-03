@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { savePost } from '../../api'
+import './style.css'
 
 function Editor({ user }) {
   const [isSaving, setIsSaving] = useState(false)
@@ -17,7 +18,7 @@ function Editor({ user }) {
   }
 
   return (
-    <form onSubmit={handleOnSubmit}>
+    <form className="form" onSubmit={handleOnSubmit}>
       <label htmlFor="title-input">Title</label>
       <input id="title-input" name="title" />
 
