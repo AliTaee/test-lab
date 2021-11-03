@@ -15,21 +15,21 @@ describe('renders subscription currently', () => {
   })
 
   test('submit button', () => {
-    const submitElement = screen.getByText(BUTTON)
+    const submitElement = screen.queryByText(BUTTON)
     expect(submitElement).toBeInTheDocument()
     expect(submitElement).toBeDisabled()
   })
 
   test('input email', () => {
-    const inputElement = screen.getByLabelText(LABEL_TEXT)
+    const inputElement = screen.queryByLabelText(LABEL_TEXT)
     expect(inputElement).toBeInTheDocument()
     expect(inputElement).toHaveAttribute('type', 'email')
-    expect(inputElement).toHaveClass('sub-email__input--error')
+    expect(inputElement).toHaveClass('sub-email__input--valid')
   })
 
   test('alert message', () => {
-    const alertElement = screen.getByRole('alert')
-    expect(alertElement).toBeInTheDocument()
+    const alertElement = screen.queryByRole('alert')
+    expect(alertElement).not.toBeInTheDocument()
   })
 })
 

@@ -10,6 +10,7 @@ function Subscription({
 
   function handleChange(event) {
     setEmail(event.target.value)
+    if (isSubmitted) setIsSubmitted(false)
   }
 
   function handleSubmit() {
@@ -24,8 +25,9 @@ function Subscription({
     return re.test(String(email).toLowerCase())
   }
 
-  const isSubmitDisabled = email === '' || !validateEmail(email)
-  const inputClassNames = isSubmitDisabled
+  const isEmailValidate = email.length >= 3 && !validateEmail(email)
+  const isSubmitBtnDisabled = !validateEmail(email)
+  const inputClassNames = isEmailValidate
     ? 'sub-email__input--error'
     : 'sub-email__input--valid'
   const submitButtonText = isSubmitted ? 'Submitted' : 'Submit'
@@ -46,13 +48,13 @@ function Subscription({
       />
       <button
         onClick={handleSubmit}
-        disabled={isSubmitDisabled}
+        disabled={isSubmitBtnDisabled}
         className="sub-email__submit"
       >
         {submitButtonText}
       </button>
       <br />
-      {isSubmitDisabled ? (
+      {isEmailValidate ? (
         <div role="alert">the email address is not valid</div>
       ) : null}
     </div>
