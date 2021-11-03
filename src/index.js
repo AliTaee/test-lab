@@ -5,7 +5,7 @@ import reportWebVitals from './reportWebVitals'
 
 // Components
 // import { Subscription } from './components/subscription/Subscription'
-import { Editor } from './components/form1/Editor'
+import { Editor } from './components/form/Editor'
 
 ReactDOM.render(
   <React.StrictMode>
