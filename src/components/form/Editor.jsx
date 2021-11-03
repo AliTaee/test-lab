@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { savePost } from '../../api'
 import './style.css'
 
-function Editor({ user }) {
+function Editor({ user = { id: 1 } }) {
   const [isSaving, setIsSaving] = useState(false)
 
   function handleOnSubmit(e) {
@@ -15,6 +15,10 @@ function Editor({ user }) {
       tags: tags.value.split(',').map((t) => t.trim()),
       userId: user.id,
     })
+
+    title.value = ''
+    content.value = ''
+    tags.value = ''
   }
 
   return (

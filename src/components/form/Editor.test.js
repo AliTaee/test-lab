@@ -42,3 +42,24 @@ test('renders a form with title, content, tags and submit button', () => {
   })
   expect(mockSavePost).toHaveBeenCalledTimes(1)
 })
+
+test('after submit inputs will be empty', () => {
+  render(<Editor user={fakeUser} />)
+
+  const inputTitle = screen.getByLabelText(/title/i)
+  userEvent.type(inputTitle, fakePost.title)
+
+  const inputContent = screen.getByLabelText(/content/i)
+  userEvent.type(inputContent, fakePost.content)
+
+  const inputTags = screen.getByLabelText(/tags/i)
+  userEvent.type(inputTags, fakePost.tags.join(','))
+
+  const submitButton = screen.getByText(/submit/i)
+  userEvent.click(submitButton)
+
+  expect(inputTitle.value).toBe('')
+  expect(inputContent.value).toBe('')
+  expect(inputTags.value).toBe('')
+  expect(submitButton).toBeDisabled()
+})
