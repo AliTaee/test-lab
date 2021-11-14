@@ -1,15 +1,24 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import { Provider } from 'react-redux'
 import './index.css'
 import reportWebVitals from './reportWebVitals'
 
-// Components
+/* Redux component */
+import { store } from './redux/redux-store'
+import { Counter } from './redux/redux-counter'
+
+/* Form component */
+// import { Editor } from './components/form/Editor'
+
+/* Interactive component */
 // import { Subscription } from './components/subscription/Subscription'
-import { Editor } from './components/form/Editor'
 
 ReactDOM.render(
   <React.StrictMode>
-    <Editor />
+    <Provider store={store}>
+      <Counter />
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root'),
 )
