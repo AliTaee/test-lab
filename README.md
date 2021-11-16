@@ -11,7 +11,7 @@ and how we could create our own assertion library.
 
 In this folder you could see examples of unit testing for react components.
 
-## src/hooks folder 🪝
+## src/hooks folder
 
 In this folder you could see examples of unit testing for react custom hooks.
 

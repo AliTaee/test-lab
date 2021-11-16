@@ -35,3 +35,16 @@ test('can render with redux custom initial state', () => {
   userEvent.click(screen.getByText('+'))
   expect(countElement).toHaveTextContent(4)
 })
+
+// Create a Custom Render Function to Simplify Tests of Redux Components
+// function render(
+//   ui,
+//   {initialState, store = createStore(reducer, initialState), ...rtlOptions} = {}) {
+//   function Wrapper({children}) {
+//     return <Provider store={store}>{children}</Provider>
+//   }
+//   return {
+//     ...rtlRender(ui, {wrapper: Wrapper, ...rtlOptions}),
+//     store,
+//   }
+// }
