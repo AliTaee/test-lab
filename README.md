@@ -1,6 +1,6 @@
 # Test-lab
 
-Learning and Practicing unit test in React.
+Learning and Practicing unit test in React and JavaScript.
 
 ## fundamentals folder ⚛️
 
@@ -45,6 +45,11 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 - [Testing-library guide-disappearance](https://testing-library.com/docs/guide-disappearance/)
 - [Front-End Testing is For Everyone](https://css-tricks.com/front-end-testing-is-for-everyone/)
 - [Common mistakes with React Testing Library](https://kentcdodds.com/blog/common-mistakes-with-react-testing-library)
+
+## Redux 
+
+- [Writing Tests for Redux](https://redux.js.org/usage/writing-tests)
+- [Testing Implementation Details](https://kentcdodds.com/blog/testing-implementation-details)
 
 ## Libraries 📚
 
