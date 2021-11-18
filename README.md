@@ -17,7 +17,7 @@ In this folder you could see examples of unit testing for react custom hooks.
 
 ## src/redux folder
 
-In this folder you could see examples of unit testing for redux and react components.
+In this folder you could see examples of unit and integration testing for redux and react components.
 
 ## Available Scripts
 
