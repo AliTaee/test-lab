@@ -7,6 +7,10 @@ Learning and Practicing unit test in React and JavaScript.
 In this folder you could find pure unit testing in JavaScript
 and how we could create our own assertion library.
 
+## src/react-router-v6 folder
+
+In this folder you could see examples of unit testing for react-router.
+
 ## src/components folder
 
 In this folder you could see examples of unit testing for react components.
@@ -46,7 +50,7 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 - [Front-End Testing is For Everyone](https://css-tricks.com/front-end-testing-is-for-everyone/)
 - [Common mistakes with React Testing Library](https://kentcdodds.com/blog/common-mistakes-with-react-testing-library)
 
-## Redux 
+## Redux
 
 - [Writing Tests for Redux](https://redux.js.org/usage/writing-tests)
 - [Testing Implementation Details](https://kentcdodds.com/blog/testing-implementation-details)
@@ -54,6 +58,8 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 ## Libraries 📚
 
 - [Jestjs.io](https://jestjs.io/)
+- [History](https://www.npmjs.com/package/history)
+- [Jest-axe](https://github.com/nickcolley/jest-axe)
 - [Testing-library.com](https://testing-library.com/)
 
 ## Tools 🛠️

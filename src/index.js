@@ -1,24 +1,38 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { Provider } from 'react-redux'
+import { BrowserRouter as Router } from 'react-router-dom'
+
 import './index.css'
 import reportWebVitals from './reportWebVitals'
 
-/* Redux component */
-import { store } from './redux/redux-store'
-import { Counter } from './redux/redux-counter'
+/*
+ Redux component
 
-/* Form component */
-// import { Editor } from './components/form/Editor'
+ import { Provider } from 'react-redux'
+ import { store } from './redux/redux-store'
+ import { Counter } from './redux/redux-counter'
+ <Provider store={store}>
+  <Counter />
+ </Provider>
+*/
 
-/* Interactive component */
-// import { Subscription } from './components/subscription/Subscription'
+/**
+ Examples for testing components
+
+ import { Editor } from './components/form/Editor'
+ import { Subscription } from './components/subscription/Subscription'
+ */
+
+/**
+ * Example for react router
+ */
+import Main from './react-router-v6'
 
 ReactDOM.render(
   <React.StrictMode>
-    <Provider store={store}>
-      <Counter />
-    </Provider>
+    <Router>
+      <Main />
+    </Router>
   </React.StrictMode>,
   document.getElementById('root'),
 )
