@@ -6,7 +6,7 @@ import './index.css'
 import reportWebVitals from './reportWebVitals'
 
 /*
- Redux component
+ Examples for Redux component
 
  import { Provider } from 'react-redux'
  import { store } from './redux/redux-store'
@@ -26,7 +26,8 @@ import reportWebVitals from './reportWebVitals'
 /**
  * Example for react router
  */
-import Main from './react-router-v6'
+// import Main from './react-router-v6'
+import { Main } from './react-router'
 
 ReactDOM.render(
   <React.StrictMode>

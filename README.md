@@ -7,9 +7,13 @@ Learning and Practicing unit test in React and JavaScript.
 In this folder you could find pure unit testing in JavaScript
 and how we could create our own assertion library.
 
+## src/react-router folder
+
+In this folder you could see examples of unit testing for react-router V5.
+
 ## src/react-router-v6 folder
 
-In this folder you could see examples of unit testing for react-router.
+In this folder you could see examples of unit testing for react-router V6.
 
 ## src/components folder
 
@@ -44,6 +48,7 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 - [Testingjavascript.com](https://testingjavascript.com/)
 - [But really, what is a JavaScript test?](https://kentcdodds.com/blog/but-really-what-is-a-javascript-test)
+- [How to test a custom react hook](https://atomizedobjects.com/blog/react/how-to-test-a-custom-react-hook/)
 - [Kentcdodds blog](https://kentcdodds.com/blog?q=testing)
 - [Testing-library Queries](https://testing-library.com/docs/queries/about)
 - [Testing-library guide-disappearance](https://testing-library.com/docs/guide-disappearance/)
