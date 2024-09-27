@@ -3,13 +3,13 @@
 }
 
 .sub-email__input--error {
-  border-color: red;
-  outline-color: red;
+  border-color: #ff0000;
+  outline-color: #ff0000;
 }
 
 .sub-email__input--valid {
-  border-color: green;
-  outline-color: green;
+  border-color: #008000;
+  outline-color: #008000;
 }
 
 .sub-email__submit {
