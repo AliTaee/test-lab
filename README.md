@@ -7,14 +7,6 @@ Learning and Practicing unit test in React and JavaScript.
 In this folder you could find pure unit testing in JavaScript
 and how we could create our own assertion library.
 
-## src/react-router folder
-
-In this folder you could see examples of unit testing for react-router V5.
-
-## src/react-router-v6 folder
-
-In this folder you could see examples of unit testing for react-router V6.
-
 ## src/components folder
 
 In this folder you could see examples of unit testing for react components.

@@ -20,19 +20,13 @@ import reportWebVitals from './reportWebVitals'
  Examples for testing components
 
  import { Editor } from './components/form/Editor'
- import { Subscription } from './components/subscription/Subscription'
  */
-
-/**
- * Example for react router
- */
-// import Main from './react-router-v6'
-import { Main } from './react-router'
+import { Subscription } from './components/subscription/Subscription'
 
 ReactDOM.render(
   <React.StrictMode>
     <Router>
-      <Main />
+      <Subscription />
     </Router>
   </React.StrictMode>,
   document.getElementById('root'),
