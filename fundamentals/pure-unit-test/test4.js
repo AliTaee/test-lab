@@ -23,7 +23,7 @@ test('Test 6 is even', () => {
 
 test('Test 5 is Not even', () => {
   result = isEvenNumber(5)
-  expect(result).toBeTruthy()
+  expect(result).toBeFalsy()
 })
 
 function test(title, callback) {
@@ -44,10 +44,13 @@ function expect(actual) {
       }
     },
     toBeTruthy() {
+      if (!actual) {
+        throw new Error('The result is not true!')
+      }
+    },
+    toBeFalsy() {
       if (actual) {
-        return true
-      } else {
-        return false
+        throw new Error('The result is not false!')
       }
     },
   }

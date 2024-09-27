@@ -24,7 +24,7 @@ function expect(actual) {
     },
     toBeTrue() {
       if (!actual) {
-        throw new Error('The number is not even!')
+        throw new Error('The result is not true!')
       }
     },
   }
